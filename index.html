@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SindicAppISSSTE Mobile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/pdf.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>SindicAppISSSTE</h1>
+        <p>Consulta de Leyes y Profesiogramas</p>
+    </div>
+
+    <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Buscar término (ej. licencias)...">
+        <button id="searchBtn">Buscar</button>
+    </div>
+
+    <div id="loading" class="hidden">Buscando en documentos... Un momento.</div>
+
+    <div class="results-container">
+        <div class="column">
+            <h2>Leyes y Normativa</h2>
+            <div id="resultsLeyes"></div>
+        </div>
+        <div class="column">
+            <h2>Profesiogramas</h2>
+            <div id="resultsProfes"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
